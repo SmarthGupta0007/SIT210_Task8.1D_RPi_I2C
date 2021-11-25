@@ -15,5 +15,16 @@ def Convert(data):
     return ((data[1] + (256*data[0]))/1.2)
 
 while True:
+     value = read_light_value();     
      print(" Light Intensity: "+ str(read_light_value())+ " Lux")
      time.sleep(1)
+     if (value > 200):
+         print("Too Bright")
+     elif (value > 150 && value < 200):
+         print("Bright")
+     elif (value > 100 && value < 150):
+         print("Medium")
+     elif (value > 50 && value < 100):
+         print("Dark")
+     elif (value < 50):
+         print("Too Dark")
