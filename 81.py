@@ -7,8 +7,8 @@ reset = 0x07
 high_res_mode = 0x20
 ibus = smbus.SMBus(1)
 
-def read_light_value():
-    val = ibus.read_i2c_block_data(device_add, high_res_mode)
+def light_value():
+    val = ibus.i2c_block_data(device_add, high_res_mode)
     return Convert(val)
 
 def Convert(data):
