@@ -16,7 +16,7 @@ def Convert(data):
 
 while True:
      value = light_value();     
-     print(" Light Intensity: "+ str(read_light_value())+ " Lux")
+     print(" Light Intensity: "+ str(light_value())+ " Lux")
      time.sleep(1)
      if (value > 200):
          print("Too Bright")
