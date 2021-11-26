@@ -20,11 +20,11 @@ while True:
      time.sleep(1)
      if (value > 200):
          print("Too Bright")
-     elif (value > 150 && value < 200):
+     elif (value > 150 and value < 200):
          print("Bright")
-     elif (value > 100 && value < 150):
+     elif (value > 100 and value < 150):
          print("Medium")
-     elif (value > 50 && value < 100):
+     elif (value > 50 and value < 100):
          print("Dark")
      elif (value < 50):
          print("Too Dark")
